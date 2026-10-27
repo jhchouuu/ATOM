@@ -53,7 +53,7 @@ def run(monkeypatch):
         mega=FakeMega(),
         mask_pad_rows=True,
         num_dispatchers=lambda: 4,
-        combine_quant_for_step=lambda: "bf16",
+        combine_wire_for_step=lambda: "bf16",
     )
     object.__setattr__(kernel, "prepare_finalize", pf)
 
